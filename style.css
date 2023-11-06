@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@400;500;600;700&family=Englebert&family=Redressed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Englebert', cursive;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#D1465F,#010F1A,#010F1A,#D1465F);
+}
+
+
+.bg-img{
+    width: 80%;
+    height: 90%;
+    background-image: url(https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 2px rgb(30, 30, 30);
+    position: relative;
+}
+
+.side-bg{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 30%;
+    height: 75%;
+    background-color: #D1465F;
+    z-index: 11;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 5px;
+    color: #241A13;
+    padding: 0% 8% 0 2%;
+}
+
+.side-bg h1{
+    margin-top: 80%;
+    font-size: 40px;
+}
+
+.side-bg p{
+    font-size: 16px;
+    margin-top: 6%;
+}
+
+.icons{
+    margin-top: 35%;
+}
+
+.icons i{
+    font-size: 23px;
+    margin-right: 5px;
+}
+
+.main{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    background-image: url(./images/smothie1.png);
+    top: 15%;
+    left: 15%;
+    /* left: -10%; */
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 22;
+    transform: rotateY(180deg);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    margin-top: -4%;
+    /* background-color: red; */
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding:0 17%;
+    text-align: center;
+    color: #E0DDD3;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+li{
+    cursor: pointer;
+}
+
+nav h1{
+    font-family: 'Comforter', cursive;
+    font-size: 40px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.content{
+    text-align: end;
+    margin:15% 10%;
+    color: #E0DDD3;
+    letter-spacing: 2px;
+}
+
+.content p{
+    color: #B8997E;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.content h1{
+    text-transform: lowercase;
+    margin-top: 1%;
+    font-size: 60px;
+    line-height:60px ;
+    font-weight: 900;
+}
+
+.content button{
+    font-family: 'Englebert', cursive;
+    margin-top: 8%;
+    border: none;
+    padding: 1% 3%;
+    font-size: 17px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background-color: #B8997E;
+    color: #2D2420;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.content button::before{
+    /* content: ""; */
+    width: 150%;
+    height: 100%;
+    position: absolute;
+    background-color: #2D2420;
+    top: -50%;
+    right: -24%;
+    z-index: -1;
+}
+
+
